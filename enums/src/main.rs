@@ -21,7 +21,12 @@ enum Message {
 
 impl Message  {
     fn call(&self){
-       println!("{:?}", self);
+       match self {
+           Self::Write(value) => println!("{value}"),
+           Self::ChangeColor(x, y, z) => println!("{}", x),
+           Self::Move { x, y } => println!("moved"),
+           Self::Quit => println!("exited"),
+       }
     }
 }
 
