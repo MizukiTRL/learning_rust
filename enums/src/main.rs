@@ -5,7 +5,7 @@ fn main() {
     let m = Message::Write(String::from("Hola gato"));
     m.call();
 
-    let nums: [i32; 10] = Default::default();;
+    let nums: [i32; 10] = Default::default();
 
     for i in nums{
         println!("{i}");
@@ -14,6 +14,15 @@ fn main() {
     let five = Some(5);
     let six = plus_one(five);
     let none = plus_one(None);
+    let seis = six.unwrap();
+
+    println!("{}", six.unwrap());
+
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
+    }
+
 }
 
 enum IpAddrKind {
@@ -40,6 +49,7 @@ impl Message  {
     }
 }
 
+#[derive(Debug)]
 enum UsState {
     Alabama,
     Alaska,
