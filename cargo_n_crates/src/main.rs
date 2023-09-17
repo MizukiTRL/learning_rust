@@ -1,8 +1,10 @@
-use crate::cat;
+mod cat;
+
+use cat::Cat;
 fn main() {
     println!("Hello, world!");
 
-    let campanita = cat::new("campana", 15);
+    let campanita = Cat::new("campana", 15);
 
-    println!("{}", campanita)
+    println!("{}", campanita.name)
 }

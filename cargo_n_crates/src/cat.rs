@@ -9,5 +9,7 @@ impl Cat {
         age: age,
     }}
 
-    pub fn name()-> String => name;
+    pub fn name()-> String {
+        name
+    }
 }
