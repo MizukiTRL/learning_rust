@@ -1,0 +1,1 @@
+C:\Users\anton\OneDrive\Escritorio\programacion\learn_rust\minigrep\target\debug\minigrep.exe: C:\Users\anton\OneDrive\Escritorio\programacion\learn_rust\minigrep\src\lib.rs C:\Users\anton\OneDrive\Escritorio\programacion\learn_rust\minigrep\src\main.rs
